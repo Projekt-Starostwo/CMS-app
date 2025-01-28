@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_kierunek_kieruneks",
+  "info": {
+    "displayName": "kierunek",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nazwa_kierunku": {
+      "type": "string",
+      "required": true
+    },
+    "opis_kierunku": {
+      "type": "text",
+      "required": true
+    },
+    "typ_kierunku": {
+      "type": "enumeration",
+      "enum": [
+        "liceum",
+        "technikum",
+        "szkola_zawodowa"
+      ],
+      "required": true
+    },
+    "zdjecie": {
+      "allowedTypes": [
+        "videos",
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

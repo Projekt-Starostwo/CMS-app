@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_szkola_szkolas",
+  "info": {
+    "displayName": "szkola",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "opis": {
+      "type": "text",
+      "required": false
+    },
+    "funkcjonuje": {
+      "type": "boolean",
+      "default": false
+    },
+    "zdjecia_rodzaju": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

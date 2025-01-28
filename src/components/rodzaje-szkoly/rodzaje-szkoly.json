@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_rodzaje_szkoly_rodzaje_szkolies",
+  "info": {
+    "displayName": "rodzaje_szkoly",
+    "icon": "chartBubble",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "liceum": {
+      "displayName": "szkola",
+      "type": "component",
+      "repeatable": false,
+      "component": "szkola.szkola",
+      "required": true
+    },
+    "technikum": {
+      "type": "component",
+      "repeatable": false,
+      "component": "szkola.szkola",
+      "required": true
+    },
+    "szkola_zawodowa": {
+      "type": "component",
+      "repeatable": false,
+      "component": "szkola.szkola",
+      "required": true
+    }
+  }
+}

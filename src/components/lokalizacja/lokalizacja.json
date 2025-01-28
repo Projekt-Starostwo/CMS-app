@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_lokalizacja_lokalizacjas",
+  "info": {
+    "displayName": "lokalizacja",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "dlugosc_geograficzna_szkoly": {
+      "type": "decimal",
+      "required": true
+    },
+    "szerokosc_geograficzna_szkoly": {
+      "type": "decimal",
+      "required": true
+    }
+  }
+}

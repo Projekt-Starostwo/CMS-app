@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_lista_kierunkow_lista_kierunkows",
+  "info": {
+    "displayName": "lista_kierunkow",
+    "icon": "arrowUp"
+  },
+  "options": {},
+  "attributes": {
+    "kiuerunek": {
+      "displayName": "kierunek",
+      "type": "component",
+      "repeatable": false,
+      "component": "kierunek.kierunek"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_typ_szkoly_typ_szkolies",
+  "info": {
+    "displayName": "typ_szkoly",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "opis_typu_szkoly": {
+      "type": "boolean"
+    }
+  }
+}
