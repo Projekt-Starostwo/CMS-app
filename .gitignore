@@ -87,27 +87,27 @@
 # # Node.js
 # ############################
 
-# lib-cov
-# lcov.info
-# pids
-# logs
-# results
-# node_modules
-# .node_history
+lib-cov
+lcov.info
+pids
+logs
+results
+node_modules
+.node_history
 
 # ############################
 # # Package managers
 # ############################
 
-# .yarn/*
-# !.yarn/cache
-# !.yarn/unplugged
-# !.yarn/patches
-# !.yarn/releases
-# !.yarn/sdks
-# !.yarn/versions
-# .pnp.*
-# yarn-error.log
+.yarn/*
+!.yarn/cache
+!.yarn/unplugged
+!.yarn/patches
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+yarn-error.log
 
 # ############################
 # # Tests
