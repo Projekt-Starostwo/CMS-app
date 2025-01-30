@@ -81,6 +81,10 @@
       "repeatable": false,
       "component": "rodzaje-szkoly.rodzaje-szkoly",
       "required": true
+    },
+    "skrot_szkoly": {
+      "type": "string",
+      "required": true
     }
   }
 }

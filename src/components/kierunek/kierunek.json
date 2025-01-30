@@ -17,18 +17,11 @@
     },
     "typ_kierunku": {
       "type": "enumeration",
-      "enum": [
-        "liceum",
-        "technikum",
-        "szkola_zawodowa"
-      ],
+      "enum": ["liceum", "technikum", "szkola_zawodowa"],
       "required": true
     },
     "zdjecie": {
-      "allowedTypes": [
-        "videos",
-        "images"
-      ],
+      "allowedTypes": ["videos", "images"],
       "type": "media",
       "multiple": true
     }

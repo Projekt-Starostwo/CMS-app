@@ -422,6 +422,7 @@ export interface ApiListaSzkolListaSzkol extends Struct.CollectionTypeSchema {
       false
     > &
       Schema.Attribute.Required;
+    skrot_szkoly: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

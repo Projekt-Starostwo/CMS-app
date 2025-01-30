@@ -2,11 +2,12 @@
   "collectionName": "components_lista_kierunkow_lista_kierunkows",
   "info": {
     "displayName": "lista_kierunkow",
-    "icon": "arrowUp"
+    "icon": "arrowUp",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "kiuerunek": {
+    "kierunek": {
       "displayName": "kierunek",
       "type": "component",
       "repeatable": false,

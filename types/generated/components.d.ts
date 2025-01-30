@@ -1,5 +1,13 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface BdfhHju extends Struct.ComponentSchema {
+  collectionName: 'components_bdfh_hjus';
+  info: {
+    displayName: 'hju';
+  };
+  attributes: {};
+}
+
 export interface KierunekKierunek extends Struct.ComponentSchema {
   collectionName: 'components_kierunek_kieruneks';
   info: {
@@ -21,11 +29,12 @@ export interface KierunekKierunek extends Struct.ComponentSchema {
 export interface ListaKierunkowListaKierunkow extends Struct.ComponentSchema {
   collectionName: 'components_lista_kierunkow_lista_kierunkows';
   info: {
+    description: '';
     displayName: 'lista_kierunkow';
     icon: 'arrowUp';
   };
   attributes: {
-    kiuerunek: Schema.Attribute.Component<'kierunek.kierunek', false>;
+    kierunek: Schema.Attribute.Component<'kierunek.kierunek', false>;
   };
 }
 
@@ -52,12 +61,9 @@ export interface RodzajeSzkolyRodzajeSzkoly extends Struct.ComponentSchema {
     icon: 'chartBubble';
   };
   attributes: {
-    liceum: Schema.Attribute.Component<'szkola.szkola', false> &
-      Schema.Attribute.Required;
-    szkola_zawodowa: Schema.Attribute.Component<'szkola.szkola', false> &
-      Schema.Attribute.Required;
-    technikum: Schema.Attribute.Component<'szkola.szkola', false> &
-      Schema.Attribute.Required;
+    liceum: Schema.Attribute.Component<'szkola.szkola', false>;
+    szkola_zawodowa: Schema.Attribute.Component<'szkola.szkola', false>;
+    technikum: Schema.Attribute.Component<'szkola.szkola', false>;
   };
 }
 
@@ -69,7 +75,6 @@ export interface SzkolaSzkola extends Struct.ComponentSchema {
     icon: 'alien';
   };
   attributes: {
-    funkcjonuje: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     opis: Schema.Attribute.Text;
     zdjecia_rodzaju: Schema.Attribute.Media<'images' | 'videos', true>;
   };
@@ -89,6 +94,7 @@ export interface TypSzkolyTypSzkoly extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'bdfh.hju': BdfhHju;
       'kierunek.kierunek': KierunekKierunek;
       'lista-kierunkow.lista-kierunkow': ListaKierunkowListaKierunkow;
       'lokalizacja.lokalizacja': LokalizacjaLokalizacja;

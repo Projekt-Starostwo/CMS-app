@@ -11,17 +11,14 @@
       "type": "text",
       "required": false
     },
-    "funkcjonuje": {
-      "type": "boolean",
-      "default": false
-    },
     "zdjecia_rodzaju": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

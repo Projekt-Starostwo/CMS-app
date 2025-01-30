@@ -12,19 +12,19 @@
       "type": "component",
       "repeatable": false,
       "component": "szkola.szkola",
-      "required": true
+      "required": false
     },
     "technikum": {
       "type": "component",
       "repeatable": false,
       "component": "szkola.szkola",
-      "required": true
+      "required": false
     },
     "szkola_zawodowa": {
       "type": "component",
       "repeatable": false,
       "component": "szkola.szkola",
-      "required": true
+      "required": false
     }
   }
 }
