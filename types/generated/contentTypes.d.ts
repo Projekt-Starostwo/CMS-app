@@ -381,6 +381,7 @@ export interface ApiListaSzkolListaSzkol extends Struct.CollectionTypeSchema {
     draftAndPublish: false;
   };
   attributes: {
+    adres_facebooka_szkoly: Schema.Attribute.String;
     adres_strony_szkoly: Schema.Attribute.String & Schema.Attribute.Required;
     adres_szkoly: Schema.Attribute.String & Schema.Attribute.Required;
     aktywna_rekrutacja: Schema.Attribute.Boolean &
@@ -391,6 +392,7 @@ export interface ApiListaSzkolListaSzkol extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     data_konca_rekrutacji: Schema.Attribute.Date;
     data_startu_rekrutacji: Schema.Attribute.Date;
+    email_szkoly: Schema.Attribute.Email;
     glowna_galeria_zdjec_szkoly: Schema.Attribute.Media<
       'images' | 'files' | 'videos',
       true
@@ -415,6 +417,7 @@ export interface ApiListaSzkolListaSzkol extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Required;
     nazwa_szkoly: Schema.Attribute.String & Schema.Attribute.Required;
+    numer_telefonu: Schema.Attribute.String;
     opis_szkoly: Schema.Attribute.Text & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     rodzaje_szkoly: Schema.Attribute.Component<

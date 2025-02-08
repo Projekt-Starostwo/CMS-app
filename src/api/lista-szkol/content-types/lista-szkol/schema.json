@@ -85,6 +85,15 @@
     "skrot_szkoly": {
       "type": "string",
       "required": true
+    },
+    "adres_facebooka_szkoly": {
+      "type": "string"
+    },
+    "email_szkoly": {
+      "type": "email"
+    },
+    "numer_telefonu": {
+      "type": "string"
     }
   }
 }
