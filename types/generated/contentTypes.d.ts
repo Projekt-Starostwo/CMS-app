@@ -400,11 +400,6 @@ export interface ApiListaSzkolListaSzkol extends Struct.CollectionTypeSchema {
     glowne_zdjecie_szkoly: Schema.Attribute.Media<'images'> &
       Schema.Attribute.Required;
     liczba_uczniow: Schema.Attribute.Integer;
-    lista_kierunkow: Schema.Attribute.Component<
-      'lista-kierunkow.lista-kierunkow',
-      true
-    > &
-      Schema.Attribute.Required;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

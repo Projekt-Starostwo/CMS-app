@@ -11,14 +11,10 @@
       "type": "text",
       "required": false
     },
-    "zdjecia_rodzaju": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "videos"
-      ]
+    "lista_kierunkow": {
+      "type": "component",
+      "repeatable": true,
+      "component": "lista-kierunkow.lista-kierunkow"
     }
   }
 }

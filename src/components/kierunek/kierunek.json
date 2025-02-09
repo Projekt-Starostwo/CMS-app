@@ -15,15 +15,22 @@
       "type": "text",
       "required": true
     },
-    "typ_kierunku": {
-      "type": "enumeration",
-      "enum": ["liceum", "technikum", "szkola_zawodowa"],
-      "required": true
-    },
-    "zdjecie": {
-      "allowedTypes": ["videos", "images"],
+    "glowne_zdjecie": {
       "type": "media",
-      "multiple": true
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "galeria": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
     }
   }
 }

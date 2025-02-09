@@ -35,13 +35,6 @@
       "component": "lokalizacja.lokalizacja",
       "required": true
     },
-    "lista_kierunkow": {
-      "displayName": "lista_kierunkow",
-      "type": "component",
-      "repeatable": true,
-      "component": "lista-kierunkow.lista-kierunkow",
-      "required": true
-    },
     "aktywna_rekrutacja": {
       "type": "boolean",
       "default": false,

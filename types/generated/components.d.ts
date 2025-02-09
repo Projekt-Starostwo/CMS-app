@@ -16,13 +16,10 @@ export interface KierunekKierunek extends Struct.ComponentSchema {
     icon: 'book';
   };
   attributes: {
+    galeria: Schema.Attribute.Media<'images' | 'videos', true>;
+    glowne_zdjecie: Schema.Attribute.Media<'images'>;
     nazwa_kierunku: Schema.Attribute.String & Schema.Attribute.Required;
     opis_kierunku: Schema.Attribute.Text & Schema.Attribute.Required;
-    typ_kierunku: Schema.Attribute.Enumeration<
-      ['liceum', 'technikum', 'szkola_zawodowa']
-    > &
-      Schema.Attribute.Required;
-    zdjecie: Schema.Attribute.Media<'videos' | 'images', true>;
   };
 }
 
@@ -34,7 +31,8 @@ export interface ListaKierunkowListaKierunkow extends Struct.ComponentSchema {
     icon: 'arrowUp';
   };
   attributes: {
-    kierunek: Schema.Attribute.Component<'kierunek.kierunek', false>;
+    kierunek: Schema.Attribute.Component<'kierunek.kierunek', false> &
+      Schema.Attribute.Required;
   };
 }
 
@@ -75,8 +73,11 @@ export interface SzkolaSzkola extends Struct.ComponentSchema {
     icon: 'alien';
   };
   attributes: {
+    lista_kierunkow: Schema.Attribute.Component<
+      'lista-kierunkow.lista-kierunkow',
+      true
+    >;
     opis: Schema.Attribute.Text;
-    zdjecia_rodzaju: Schema.Attribute.Media<'images' | 'videos', true>;
   };
 }
 

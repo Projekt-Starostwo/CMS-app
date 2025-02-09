@@ -11,7 +11,8 @@
       "displayName": "kierunek",
       "type": "component",
       "repeatable": false,
-      "component": "kierunek.kierunek"
+      "component": "kierunek.kierunek",
+      "required": true
     }
   }
 }
