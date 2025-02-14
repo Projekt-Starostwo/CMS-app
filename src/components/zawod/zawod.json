@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_zawod_zawods",
+  "info": {
+    "displayName": "Zawód",
+    "icon": "brush"
+  },
+  "options": {},
+  "attributes": {
+    "nazwa_zawodu": {
+      "type": "string",
+      "required": true
+    },
+    "opis_zawodu": {
+      "type": "text",
+      "required": true
+    },
+    "zdjecie_zawodu": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

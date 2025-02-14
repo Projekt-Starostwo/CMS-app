@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_lista_kwalifikacji_lista_kwalifikacjis",
+  "info": {
+    "displayName": "lista_kwalifikacji",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "kwalifikacja": {
+      "type": "component",
+      "repeatable": false,
+      "component": "kwalifikacja.kwalifikacja",
+      "required": true
+    }
+  }
+}

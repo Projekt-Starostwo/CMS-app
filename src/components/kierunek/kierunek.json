@@ -31,6 +31,18 @@
         "images",
         "videos"
       ]
+    },
+    "lista_kwalifikacji": {
+      "displayName": "lista_kwalifikacji",
+      "type": "component",
+      "repeatable": true,
+      "component": "lista-kwalifikacji.lista-kwalifikacji"
+    },
+    "lista_zawodow": {
+      "displayName": "Lista zawodów",
+      "type": "component",
+      "repeatable": true,
+      "component": "lista-zawodow.lista-zawodow"
     }
   }
 }

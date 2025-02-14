@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_kwalifikacja_kwalifikacjas",
+  "info": {
+    "displayName": "kwalifikacja",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "kod_kwalifikacji": {
+      "type": "string",
+      "required": true
+    },
+    "nazwa_kwalifikacji": {
+      "type": "string",
+      "required": true
+    },
+    "opis_kwalifikacji": {
+      "type": "text"
+    }
+  }
+}

@@ -18,8 +18,29 @@ export interface KierunekKierunek extends Struct.ComponentSchema {
   attributes: {
     galeria: Schema.Attribute.Media<'images' | 'videos', true>;
     glowne_zdjecie: Schema.Attribute.Media<'images'>;
+    lista_kwalifikacji: Schema.Attribute.Component<
+      'lista-kwalifikacji.lista-kwalifikacji',
+      true
+    >;
+    lista_zawodow: Schema.Attribute.Component<
+      'lista-zawodow.lista-zawodow',
+      true
+    >;
     nazwa_kierunku: Schema.Attribute.String & Schema.Attribute.Required;
     opis_kierunku: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
+export interface KwalifikacjaKwalifikacja extends Struct.ComponentSchema {
+  collectionName: 'components_kwalifikacja_kwalifikacjas';
+  info: {
+    displayName: 'kwalifikacja';
+    icon: 'bulletList';
+  };
+  attributes: {
+    kod_kwalifikacji: Schema.Attribute.String & Schema.Attribute.Required;
+    nazwa_kwalifikacji: Schema.Attribute.String & Schema.Attribute.Required;
+    opis_kwalifikacji: Schema.Attribute.Text;
   };
 }
 
@@ -32,6 +53,36 @@ export interface ListaKierunkowListaKierunkow extends Struct.ComponentSchema {
   };
   attributes: {
     kierunek: Schema.Attribute.Component<'kierunek.kierunek', false> &
+      Schema.Attribute.Required;
+  };
+}
+
+export interface ListaKwalifikacjiListaKwalifikacji
+  extends Struct.ComponentSchema {
+  collectionName: 'components_lista_kwalifikacji_lista_kwalifikacjis';
+  info: {
+    description: '';
+    displayName: 'lista_kwalifikacji';
+    icon: 'apps';
+  };
+  attributes: {
+    kwalifikacja: Schema.Attribute.Component<
+      'kwalifikacja.kwalifikacja',
+      false
+    > &
+      Schema.Attribute.Required;
+  };
+}
+
+export interface ListaZawodowListaZawodow extends Struct.ComponentSchema {
+  collectionName: 'components_lista_zawodow_lista_zawodows';
+  info: {
+    description: '';
+    displayName: 'Lista zawod\u00F3w';
+    icon: 'collapse';
+  };
+  attributes: {
+    zawod: Schema.Attribute.Component<'zawod.zawod', false> &
       Schema.Attribute.Required;
   };
 }
@@ -92,16 +143,33 @@ export interface TypSzkolyTypSzkoly extends Struct.ComponentSchema {
   };
 }
 
+export interface ZawodZawod extends Struct.ComponentSchema {
+  collectionName: 'components_zawod_zawods';
+  info: {
+    displayName: 'Zaw\u00F3d';
+    icon: 'brush';
+  };
+  attributes: {
+    nazwa_zawodu: Schema.Attribute.String & Schema.Attribute.Required;
+    opis_zawodu: Schema.Attribute.Text & Schema.Attribute.Required;
+    zdjecie_zawodu: Schema.Attribute.Media<'images'>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'bdfh.hju': BdfhHju;
       'kierunek.kierunek': KierunekKierunek;
+      'kwalifikacja.kwalifikacja': KwalifikacjaKwalifikacja;
       'lista-kierunkow.lista-kierunkow': ListaKierunkowListaKierunkow;
+      'lista-kwalifikacji.lista-kwalifikacji': ListaKwalifikacjiListaKwalifikacji;
+      'lista-zawodow.lista-zawodow': ListaZawodowListaZawodow;
       'lokalizacja.lokalizacja': LokalizacjaLokalizacja;
       'rodzaje-szkoly.rodzaje-szkoly': RodzajeSzkolyRodzajeSzkoly;
       'szkola.szkola': SzkolaSzkola;
       'typ-szkoly.typ-szkoly': TypSzkolyTypSzkoly;
+      'zawod.zawod': ZawodZawod;
     }
   }
 }

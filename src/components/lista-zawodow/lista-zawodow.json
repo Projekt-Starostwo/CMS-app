@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_lista_zawodow_lista_zawodows",
+  "info": {
+    "displayName": "Lista zawodów",
+    "icon": "collapse",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "zawod": {
+      "type": "component",
+      "repeatable": false,
+      "component": "zawod.zawod",
+      "required": true
+    }
+  }
+}
