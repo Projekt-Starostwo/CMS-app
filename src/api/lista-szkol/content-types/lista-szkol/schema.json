@@ -35,18 +35,6 @@
       "component": "lokalizacja.lokalizacja",
       "required": true
     },
-    "aktywna_rekrutacja": {
-      "type": "boolean",
-      "default": false,
-      "required": true
-    },
-    "data_startu_rekrutacji": {
-      "type": "date",
-      "required": false
-    },
-    "data_konca_rekrutacji": {
-      "type": "date"
-    },
     "glowne_zdjecie_szkoly": {
       "type": "media",
       "multiple": false,
@@ -64,9 +52,6 @@
         "files",
         "videos"
       ]
-    },
-    "liczba_uczniow": {
-      "type": "integer"
     },
     "rodzaje_szkoly": {
       "displayName": "rodzaje_szkoly",

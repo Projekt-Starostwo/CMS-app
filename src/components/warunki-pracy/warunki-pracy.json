@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_warunki_pracy_warunki_pracies",
+  "info": {
+    "displayName": "warunki_pracy",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "cechy_pracy": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

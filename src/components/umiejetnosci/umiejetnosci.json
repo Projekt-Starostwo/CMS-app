@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_umiejetnosci_umiejetnoscis",
+  "info": {
+    "displayName": "umiejetnosci",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "umiejetnosc": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

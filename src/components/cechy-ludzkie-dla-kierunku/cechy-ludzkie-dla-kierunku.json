@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_cechy_ludzkie_dla_kierunku_cechy_ludzkie_dla_kierunkus",
+  "info": {
+    "displayName": "cechy_ludzkie_dla_kierunku",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "cechy_ludzkie_dla_kierunku": {
+      "type": "string"
+    }
+  }
+}

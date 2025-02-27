@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_mozliwosci_rozwoju_mozliwosci_rozwojus",
+  "info": {
+    "displayName": "mozliwosci_rozwoju",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "mozliwosci_rozwoju": {
+      "type": "string"
+    }
+  }
+}

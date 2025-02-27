@@ -7,14 +7,13 @@
   },
   "options": {},
   "attributes": {
-    "opis": {
-      "type": "text",
-      "required": false
-    },
     "lista_kierunkow": {
       "type": "component",
       "repeatable": true,
       "component": "lista-kierunkow.lista-kierunkow"
+    },
+    "opis_typu_szkoly": {
+      "type": "richtext"
     }
   }
 }

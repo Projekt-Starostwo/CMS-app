@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_praca_pracas",
+  "info": {
+    "displayName": "praca"
+  },
+  "options": {},
+  "attributes": {
+    "praca": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

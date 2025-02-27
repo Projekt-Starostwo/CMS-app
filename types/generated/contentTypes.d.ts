@@ -384,14 +384,9 @@ export interface ApiListaSzkolListaSzkol extends Struct.CollectionTypeSchema {
     adres_facebooka_szkoly: Schema.Attribute.String;
     adres_strony_szkoly: Schema.Attribute.String & Schema.Attribute.Required;
     adres_szkoly: Schema.Attribute.String & Schema.Attribute.Required;
-    aktywna_rekrutacja: Schema.Attribute.Boolean &
-      Schema.Attribute.Required &
-      Schema.Attribute.DefaultTo<false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    data_konca_rekrutacji: Schema.Attribute.Date;
-    data_startu_rekrutacji: Schema.Attribute.Date;
     email_szkoly: Schema.Attribute.Email;
     glowna_galeria_zdjec_szkoly: Schema.Attribute.Media<
       'images' | 'files' | 'videos',
@@ -399,7 +394,6 @@ export interface ApiListaSzkolListaSzkol extends Struct.CollectionTypeSchema {
     >;
     glowne_zdjecie_szkoly: Schema.Attribute.Media<'images'> &
       Schema.Attribute.Required;
-    liczba_uczniow: Schema.Attribute.Integer;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

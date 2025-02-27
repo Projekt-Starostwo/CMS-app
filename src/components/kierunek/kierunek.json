@@ -11,10 +11,6 @@
       "type": "string",
       "required": true
     },
-    "opis_kierunku": {
-      "type": "text",
-      "required": true
-    },
     "glowne_zdjecie": {
       "type": "media",
       "multiple": false,
@@ -32,17 +28,56 @@
         "videos"
       ]
     },
-    "lista_kwalifikacji": {
-      "displayName": "lista_kwalifikacji",
-      "type": "component",
-      "repeatable": true,
-      "component": "lista-kwalifikacji.lista-kwalifikacji"
+    "opis_kierunku": {
+      "type": "richtext"
     },
-    "lista_zawodow": {
-      "displayName": "Lista zawodów",
+    "liczba_oddzialow": {
+      "type": "decimal"
+    },
+    "liczba_uczniow": {
+      "type": "integer"
+    },
+    "umiejetnosci": {
+      "displayName": "umiejetnosci",
       "type": "component",
       "repeatable": true,
-      "component": "lista-zawodow.lista-zawodow"
+      "component": "umiejetnosci.umiejetnosci"
+    },
+    "praca": {
+      "displayName": "praca",
+      "type": "component",
+      "repeatable": true,
+      "component": "praca.praca"
+    },
+    "warunki_pracy": {
+      "displayName": "warunki_pracy",
+      "type": "component",
+      "repeatable": true,
+      "component": "warunki-pracy.warunki-pracy"
+    },
+    "cechy_ludzkie_dla_kierunku": {
+      "displayName": "cechy_ludzkie_dla_kierunku",
+      "type": "component",
+      "repeatable": true,
+      "component": "cechy-ludzkie-dla-kierunku.cechy-ludzkie-dla-kierunku"
+    },
+    "mozliwosci_rozwoju": {
+      "displayName": "mozliwosci_rozwoju",
+      "type": "component",
+      "repeatable": true,
+      "component": "mozliwosci-rozwoju.mozliwosci-rozwoju"
+    },
+    "rozszerzone_przedmioty": {
+      "type": "string"
+    },
+    "punktowane_przedmioty": {
+      "type": "string"
+    },
+    "slogan_start": {
+      "type": "string"
+    },
+    "slogan_koniec": {
+      "type": "string"
     }
   }
 }
