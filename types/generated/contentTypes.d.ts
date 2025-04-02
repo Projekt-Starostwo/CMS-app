@@ -407,7 +407,6 @@ export interface ApiListaSzkolListaSzkol extends Struct.CollectionTypeSchema {
       Schema.Attribute.Required;
     nazwa_szkoly: Schema.Attribute.String & Schema.Attribute.Required;
     numer_telefonu: Schema.Attribute.String;
-    opis_szkoly: Schema.Attribute.Text & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     rodzaje_szkoly: Schema.Attribute.Component<
       'rodzaje-szkoly.rodzaje-szkoly',

@@ -16,10 +16,6 @@
       "type": "string",
       "required": true
     },
-    "opis_szkoly": {
-      "type": "text",
-      "required": true
-    },
     "adres_strony_szkoly": {
       "type": "string",
       "required": true
